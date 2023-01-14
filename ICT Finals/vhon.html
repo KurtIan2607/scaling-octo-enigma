@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(../Pictures/backgrounds/2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+        .navbar{
+            height: 12%;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            width: 50px;
+            cursor: pointer;
+        }
+        nav{
+            flex: 1;
+            text-align: right;
+        }   
+        nav ul li{
+            list-style-type: none; 
+            display: inline-block;
+            margin-left: 30px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-family: 'Viga', sans-serif;
+        }
+        .friends1{
+            width: 200px;
+            margin-left: 500px;
+        }
+        .friends2{
+            width: 200px;
+            margin-left: 500px;
+        }              
+        .IconU {
+            background-image: url("https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/321267813_3050107185298842_29187462064984019_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEviiHkYwPV1iuFvtUbIw93H7ljywqniEAfuWPLCqeIQBR3_LvjwxRRgyrEDzFYMcAx05hEB4TiZL8bsWPCxiDl&_nc_ohc=jjFWEOxdEFEAX84SGCm&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdTwNVF5Gn4b_nS5SHk2puLG5sZbc2K2cIv58ZT8S4El7A&oe=63E07BF7");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: left;
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 110px;
+            width: 200px; height: 200px;
+            margin-top: 100px; margin-left: 50px; margin-bottom: 100px;
+            position: absolute; z-index: 1;
+        }
+
+        .TextU {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 75px;
+            border: 2vw solid black;
+            border-bottom-right-radius: 100px; border-top-right-radius: 20px;
+            width: fit-content; height: fit-content; 
+            padding-top: -10px; padding-bottom: 0px; padding-left: 60px; padding-right: 60px;
+            margin-top: -140px; margin-left: 190px;
+            position: absolute;
+        }
+
+        .subtextU {
+            background-image: url(../Pictures/backgrounds/5.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            margin-top: 10px; margin-left: 300px; margin-right: 125px;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 30px;
+            margin-right: 250px;
+            margin-left: 250px;
+            margin-top: 40px;
+        }
+
+        .IconV {
+            background-image: url("https://z-p3-scontent.fmnl26-2.fna.fbcdn.net/v/t1.15752-9/288456531_5038727752904561_8111255787722732263_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFXvdmMbft_xMeyrjSflpUoA_oa_fFZ6QoD-hr98VnpCmo5lUF4ZNVkI6t7MFaWCANNYgVqJ_-5T36omKW-waaN&_nc_ohc=RQIbB1EcEeAAX-Z_EtX&tn=MMgUv60n_Ng8sADV&_nc_ht=z-p3-scontent.fmnl26-2.fna&oh=03_AdQZykXq3gp7wImTdkUTfpuKBsQ6p6WKEPckA7GlLBiKRg&oe=63E47E75");
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            border-radius: 110px;
+            border: 5px solid rgb(255, 255, 255);
+            width: 200px; height: 200px;
+            margin-top: 100px; margin-left: 50px;
+            position: relative; z-index: 1;
+        }
+
+        .TextV {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 75px;
+            border: 2vw solid black;
+            border-bottom-right-radius: 100px; border-top-right-radius: 20px;
+            width: fit-content; height: fit-content; 
+            padding-top: -10px; padding-bottom: 0px; padding-left: 60px; padding-right: 60px;
+            margin-top: -180px; margin-left: 190px;
+            position: absolute;
+        }
+        
+        .subtextV {
+            background-image: url("../Pictures/backgrounds/5.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            margin-top: -10px; margin-left: 300px; margin-right: 125px;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 30px;
+            margin-right: 250px;
+            margin-left: 250px;
+            margin-top: 40px;
+        }
+
+        .IconW {
+            background-image: url(https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/323340524_443084321242102_839782421275196377_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEWYUorC9S889tc6Q8yEJES9rgz05HCHeD2uDPTkcId4PQ5aVZ347iUNUHHuGslMH6jRUJV82jGcJXyWmGLUiLF&_nc_ohc=pfl8hdOtu3YAX9bkg0B&_nc_ht=scontent.fmnl8-2.fna&oh=03_AdTnIN6eig_0x4LAlZDPSJ6kL8CFiqJCI2ZitX3K1Cofvw&oe=63E07971);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 110px;
+            border: 5px solid rgb(255, 255, 255);
+            width: 200px; height: 200px;
+            margin-top: 100px; margin-left: 100px;
+            position: relative; z-index: 1;
+        }
+
+        .TextW {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 75px;
+            border: 2vw solid black;
+            border-bottom-right-radius: 100px; border-top-right-radius: 20px;
+            width: fit-content; height: fit-content; 
+            padding-top: -10px; padding-bottom: 0px; padding-left: 60px; padding-right: 60px;
+            margin-top: -180px; margin-left: 240px;
+            position: absolute;
+        }
+
+        .subtextW {
+            background-image: url(https://w0.peakpx.com/wallpaper/459/890/HD-wallpaper-squares-white-geometric-shapes-white-aesthetic-thumbnail.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            margin-top: -10px; margin-left: 300px; margin-right: 125px;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 30px;
+        }
+
+        .IconX {
+            background-image: url(https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/317250063_547760900529762_4909335933398653141_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFOoQgjrbRzMXfMzhU0HPrLk2Zjuz-5wquTZmO7P7nCqz2IcGuwcrAH5fkMwSXRIQtfLYCdFK5c_7m6gbr4jSGd&_nc_ohc=H2r1g-q-2vsAX8CGw5q&_nc_ht=scontent.fmnl8-1.fna&oh=00_AfAvYRZMs2mKXbpE1UJoWG1caQMxpcZ68sdEneAxq1wHEg&oe=63BE37B1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 100px;
+            border: 5px solid rgb(255, 255, 255);
+            width: 200px; height: 200px;
+            margin-top: 100px; margin-left: 100px;
+            position: relative; z-index: 1;
+        }
+
+        .TextX {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 70px;
+            border: 2vw solid black;
+            border-bottom-right-radius: 100px; border-top-right-radius: 20px;
+            width: fit-content; height: fit-content; 
+            padding-top: -10px; padding-bottom: 0px; padding-left: 60px; padding-right: 60px;
+            margin-top: -180px; margin-left: 240px;
+            position: absolute;
+        }
+
+        .subtextX {
+            background-image: url(https://w0.peakpx.com/wallpaper/459/890/HD-wallpaper-squares-white-geometric-shapes-white-aesthetic-thumbnail.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            margin-top: -10px; margin-left: 300px; margin-right: 125px;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 30px;
+        }
+
+        .IconY {
+            background-image: url(https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/291637630_452417460064107_4484109386092177838_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFSb5Ldp-4hTDTerdAfUcIlMfWUjxj7lcEx9ZSPGPuVwTOq6Xw9VPVy3O-D250NqO9vnFg2EjGPksmCpx3smDkj&_nc_ohc=6vFAEvUTi80AX_1InDJ&_nc_ht=scontent.fmnl8-1.fna&oh=00_AfB1SQg6y-rNQ8w6COo8RntptBVcRKLb13IPt9yTdlWxzw&oe=63BE1D09);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 100px;
+            border: 5px solid rgb(255, 255, 255);
+            width: 200px; height: 200px;
+            margin-top: 100px; margin-left: 100px;
+            position: relative;z-index: 1;
+        }
+
+        .TextY {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 85px;
+            border: 2vw solid black;
+            border-bottom-right-radius: 100px; border-top-right-radius: 20px;
+            width: fit-content; height: fit-content; 
+            padding-top: -10px; padding-bottom: 0px; padding-left: 60px; padding-right: 60px;
+            margin-top: -190px; margin-left: 240px;
+            position: absolute;
+        }
+
+        .subtextY {
+            background-image: url(https://w0.peakpx.com/wallpaper/459/890/HD-wallpaper-squares-white-geometric-shapes-white-aesthetic-thumbnail.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            margin-top: -10px; margin-left: 300px; margin-right: 125px; margin-bottom: 40px;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 30px;
+        }
+
+        .IconZ {
+            background-image: url(https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/323701559_5731309710286427_3616141803307432768_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFX4xLLCOrZvz9EOcHdw2-TIiz_nIJOcdQiLP-cgk5x1BKPemtMLltbZv0vwOfVI37ya8ostC8SALVxUqYDyC1a&_nc_ohc=qWaO6wCRK8YAX-43t7d&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdQPNK63JI30F5PjwW2LpkswJFxUFYJHkiNXzvYJbl6I8g&oe=63E3BC02);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 100px;
+            border: 5px solid rgb(255, 255, 255);
+            width: 200px; height: 200px;
+            margin-top: 100px; margin-left: 100px;
+            position: relative;z-index: 1;
+        }
+
+        .TextZ {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            float: left;
+            text-align: center;
+            font-size: 100px;
+            border: 20px solid black;
+            border-bottom-right-radius: 100px; border-top-right-radius: 20px;
+            width: fit-content; height: fit-content;
+            padding-top: -10px; padding-bottom: 0px; padding-left: 80px; padding-right: 80px;
+            margin-top: -180px; margin-left: 230px;
+            position: relative;
+        }
+
+        .subtextZ {
+            background-image: url(https://w0.peakpx.com/wallpaper/459/890/HD-wallpaper-squares-white-geometric-shapes-white-aesthetic-thumbnail.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            margin-top: -10px; margin-left: 300px; margin-right: 125px; margin-bottom: 40px;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="../Pictures/img/logo.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="finals.html">Home</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="destination.html">Dream Destination</a></li>
+                <li><a href="">Friends</a></li>
+                <li><a href="vhon.html">Stages of my Life</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <li><a href="#1">My Early Childhood</a></li>
+        <li><a href="#2">My Elementary Days</a></li>
+        <li><a href="#3">My Junior High Days</a></li>
+        <li><a href="#4">My Senior High Days</a></li>
+        <li><a href="#5">My Achievements</a></li>
+        <li><a href="#6">My Friends</a></li>
+    </div>
+    <div class="IconU" id="1"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="TextU">EARLY CHILDHOOD</div>
+    <div class="subtextU">When I was around my early childhood I was not that much fond of studying. All I wanted to do was watch telivision all
+        to the point where my mother would put up a curfew on my watching hours. It made me mad and I acted...well like a child. I threw a tantrum which I regretted
+        right after learning to listen the hard way. My mother disciplined me which I am thankful for because of her I didn't grew up spoiled. 
+        <br><br>A few years after that I learned to entertain myself by drawing. I drew at every book, notebook, or paper that I saw until I fell asleep. I came
+        to like drawing and it became my hobby even until now.
+    </div>
+    <div class="IconV" id="2"></div>
+    <div class="TextV">ELEMENTARY DAYS</div>
+    <div class="subtextV">I spent a decent amount of my elementary days being an extrovert. This is where I learned to communicate with others,
+        learn how to make friends and gaining different kinds of achievements outside of my home. I was still fond of drawing and in my elementary days 
+        I found people with the same passion. We drew comics together and even made our own characters.<br><br>When I was in my 5th grade I joined my first 
+        science quiz bee which is what made me begin to like studying. Ever since then I was always included in the honor rolls which I took pride in 
+        although one subject I always had a hard time dealing with was Mathematics.
+    </div>
+    <div class="IconW" id="3"></div>   
+    <div class="TextW">JUNIOR HIGH DAYS</div>
+    <div class="subtextW">During my Junior Highschool Days I made mistakes A LOT and I regretted them A LOT but that just means I also learned plenty from
+        those mistakes. I experienced a different schedule of going to school and going home so it made me excited.<br><br>In grade 8 we had to go home at night
+        and I'd find the time where me and my friends walking home while laughing to be a precious time. I truly enjoyed my Junior Highschool Days as 
+        I slowly prepare for Senior High.
+    </div>
+    <div class="IconX" id="4"></div>
+    <div class="TextX">SENIOR HIGH DAYS</div>
+    <div class="subtextX">As a Senior highschool student I became a step closer to entering the real world of adults. I came face-to-face with deadlines,
+        found myself having a hard time managing my time, and worst of all is that math is still difficult! But even if I find it quite tiring it wasn't 
+        always hard.<br><br>I found myself relying on others and I began to deepen my bonds with others ultimately cherishing the time I spend with them. I am once 
+        again thankful that I met new friends and supportive teachers that sees us as adults and not kids. 
+    </div>
+    <div class="IconY" id="5"></div>
+    <div class="TextY">ACHIEVMENTS</div>
+    <div class="subtextY">Over the years I've made achievments both small and big. A few of them is gaining impressive grades, winning competitions, 
+        graduating from elementary and highschool and being alive to see today's sunset. I couldn't possibly have done it without God's help and the support
+        of those people that I met. Looking forward for the incoming years I wish to achieve more and If it's not too much too ask I'd also like to have people
+        to celebrate those achievments with.
+    </div>
+    <div class="IconZ" id="6"></div>
+    <div class="TextZ">Friends</div>
+    <div class="subtextZ">Thanks to my extroverted personality I met a lot of friends that I still to keep in touch up until today. Below are image maps of some of them.</div>
+    <img src="https://scontent.fmnl26-2.fna.fbcdn.net/v/t1.15752-9/324041907_3358075314448426_5893872651573712246_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGuKAxHhpfx97NWH6ZIK_LtLXI3FWsXmIQtcjcVaxeYhOXR8DgWLjtlbklNCCo3MVP3M6GuSvp1CLksHKJiyGuN&_nc_ohc=QtmbP8arPVMAX9eRe4Q&_nc_ht=scontent.fmnl26-2.fna&oh=03_AdR2vYriuGwkE0I1ZnzBopswhAhtX9acuCl-4znr75oHRw&oe=63E42C2E" alt="FriendsI" class="friends1">
+   
+    <img src="https://scontent.fmnl26-2.fna.fbcdn.net/v/t1.15752-9/324481412_505075431728428_3123121126884394942_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGusOHE01ByrhBC4_qRtxljGE9EqTcrdAMYT0SpNyt0A03b8cpkuskYMCSrJfOSgk5iRMWsyIQH02yB4yOLHLxz&_nc_ohc=JtBSrnKFQS4AX_iUNrZ&_nc_ht=scontent.fmnl26-2.fna&oh=03_AdQbPQ_Pmy_aArhheydfaBKs8Hs46xrnADlD1DovzGL4bw&oe=63E43003" alt="FriendsII" class="friends2">
+</body>
+</html>

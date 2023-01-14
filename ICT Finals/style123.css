@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("https://media.cntraveler.com/photos/61eae2a9fe18edcbd885cb01/5:4/w_3790,h_3032,c_limit/Seychelles_GettyImages-1169388113.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Viga', sans-serif;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: white;
+    font-size: 90px;
+}
+p{
+    color: white;
+    font-size: 15px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: transform 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+.card1{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url("../Pictures/img/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    margin-top: -235px;
+}
+.card2{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url("https://preview.redd.it/xjxfo2jbekw11.jpg?width=3840&format=pjpg&auto=webp&s=a0991670cf59cb4339484ad277ebc50065ca0c5f");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    margin-left: 225px;
+    margin-top: -235px;
+}
+.card3{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url("../Pictures/img/img6");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+.card4{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url("../Pictures/img/img4");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    margin-left: 225px;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: white;
+    text-shadow: 0 0 5px #999;
+    font-family: 'Viga', sans-serif;
+    text-align: center;
+}
+h6{
+    color: white;
+    text-shadow: 0 0 5px #999;
+    font-family: 'Viga', sans-serif;
+    text-align: center;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 15px;
+}
+h1{
+    font-family: 'Viga', sans-serif;
+}
+p{
+    font-family: 'Viga', sans-serif;
+}
